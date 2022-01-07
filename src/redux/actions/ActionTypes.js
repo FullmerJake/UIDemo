@@ -32,3 +32,12 @@ export const MANEUVER_BOTTOM_FROM_HOME = "MANEUVER-BOTTOM-FROM-HOME";
 export const MANEUVER_FROM_VEHICLE = "MANEUVER-FROM-VEHICLE";
 
 // ======================== Dynamic Positioning End =================================
+
+// ======================== Visibility Start ========================================
+
+export const FIRST_MENU_VIS = "FIRST-MENU-VIS";
+export const SECOND_MENU_VIS = "SECOND-MENU-VIS";
+export const MAIN_BUTTON_VIS = "MAIN-BUTTON-VIS";
+export const SECOND_BUTTON_VIS = "SECOND-BUTTON-VIS";
+
+// ======================== Visibility End ==========================================

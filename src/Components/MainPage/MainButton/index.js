@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Animated } from "react-animated-css";
 
 const MainButton = () => {
+  const dispatch = useDispatch();
   //Dynamic Positioning
   const home = useSelector((state) => state.home);
   const bottom = useSelector((state) => state.bottom);
@@ -11,6 +12,12 @@ const MainButton = () => {
   const homeFromBottom = useSelector((state) => state.homeFromBottom);
   const bottomFromHome = useSelector((state) => state.bottomFromHome);
   const tempHomeToHome = useSelector((state) => state.tempHomeToHome);
+
+  const onClickAction = () => {
+    dispatch({
+      type: "FIRST-MENU-VIS",
+    });
+  };
 
   return (
     <>
@@ -31,7 +38,7 @@ const MainButton = () => {
               <button
                 className="glow-on-hover"
                 style={{ position: "absolute", top: "40vh", left: "40vw" }}
-                // onClick={onClickAction}
+                onClick={onClickAction}
               >
                 <p> Click Me </p>
               </button>

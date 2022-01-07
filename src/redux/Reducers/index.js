@@ -24,6 +24,12 @@ import launchAimFromVehicle from "./DynamicPositioningReducers/LaunchAimButton/l
 import maneuverFromVehicle from "./DynamicPositioningReducers/ManeuverButton/maneuverFromVehicle";
 import vehicleFromMainButton from "./DynamicPositioningReducers/VehicleButton/vehicleFromMainButton";
 
+// Visibility Redux
+import mainButtonVis from "./VisibilityReducers/mainButtonVis";
+import secondButtonVis from "./VisibilityReducers/secondButtonVis";
+import firstMenuVis from "./VisibilityReducers/firstMenuVis";
+import secondMenuVis from "./VisibilityReducers/secondMenuVis";
+
 const appReducer = combineReducers({
   // You can just have setVisibility by itself, this is simply changing the name.
   home,
@@ -47,6 +53,10 @@ const appReducer = combineReducers({
   launchAimFromVehicle,
   maneuverFromVehicle,
   vehicleFromMainButton,
+  mainButtonVis,
+  secondButtonVis,
+  firstMenuVis,
+  secondMenuVis,
 });
 
 const rootReducer = (state, action) => {

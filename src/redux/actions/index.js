@@ -130,3 +130,20 @@ export const maneuverFromVehicle = () => {
 };
 
 // ===============================================================================
+
+// ======================== Visibility Start ========================================
+
+export const firstMenuVis = () => {
+  return { type: "FIRST-MENU-VIS" };
+};
+export const secondMenuVis = () => {
+  return { type: "SECOND-MENU-VIS" };
+};
+export const mainButtonVis = () => {
+  return { type: "MAIN-BUTTON-VIS" };
+};
+export const secondMenuVis = () => {
+  return { type: "SECOND-BUTTON-VIS" };
+};
+
+// ======================== Visibility End ==========================================
