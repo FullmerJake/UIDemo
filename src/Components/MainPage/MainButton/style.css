@@ -1,0 +1,160 @@
+.brightBlue {
+  height: 120px;
+  width: 130px;
+  border: 0.1px solid #dbe7f0;
+  border-radius: 0px 30px 30px 30px;
+  background-color: #2069fc;
+  box-shadow: 14px 14px 25px rgba(0, 0, 0, 0.25);
+  outline: none;
+  font-size: 18px;
+}
+
+.darkBlue {
+  height: 120px;
+  width: 130px;
+  border: 0.1px solid #dbe7f0;
+  border-radius: 0px 30px 30px 30px;
+  background-color: #0f5e9e;
+  box-shadow: 14px 14px 25px rgba(0, 0, 0, 0.25);
+  outline: none;
+  font-size: 18px;
+}
+
+#mainButtonHolder {
+  position: absolute;
+  top: 350px;
+  left: 40vw;
+}
+
+#startInnerBorder {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  border: 3px solid white;
+  height: 90px;
+  width: 100px;
+  border-radius: 0px 20px 20px 20px;
+}
+
+#none {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  height: 90px;
+  width: 100px;
+  border-radius: 0px 20px 20px 20px;
+}
+
+#buttonContent {
+  position: fixed;
+  top: 29%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: detroit;
+  color: white;
+  line-height: 20px;
+  font-size: 19px;
+  text-align: center;
+}
+
+.selectedVehicle {
+  font-family: "Roboto";
+  color: "white";
+  letter-spacing: "1px";
+  margin: "auto";
+  padding: "auto";
+}
+
+.zIndex {
+  position: relative;
+  z-index: 10;
+}
+
+.floatingButton {
+  animation: float 20s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate;
+}
+
+.floatingBorder {
+  animation: float 20s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate;
+}
+
+@keyframes float {
+  0% {
+    transform: translateZ(20px);
+  }
+  100% {
+    transform: translateY(-21px) translateX(-13px) translateZ(30px);
+  }
+}
+
+@media (min-width: 2500px) {
+  #mainButtonHolder {
+    top: 550px;
+    left: 41vw;
+  }
+  .brightBlue {
+    height: 160px;
+    width: 170px;
+    border-radius: 0px 40px 40px 40px;
+    font-size: 18px;
+  }
+
+  .darkBlue {
+    height: 160px;
+    width: 170px;
+    border-radius: 0px 40px 40px 40px;
+    font-size: 18px;
+  }
+
+  #startInnerBorder {
+    height: 120px;
+    width: 130px;
+    top: 17px;
+    left: 17px;
+    border-radius: 0px 30px 30px 30px;
+  }
+
+  #buttonContent {
+    top: 29%;
+    left: 50%;
+    line-height: 28px;
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1194px) and (orientation: landscape) {
+  #mainButtonHolder {
+    top: 210px;
+    left: 30vw;
+  }
+  .brightBlue {
+    height: 100px;
+    width: 110px;
+    border-radius: 0px 35px 35px 35px;
+    font-size: 18px;
+  }
+
+  .darkBlue {
+    height: 100px;
+    width: 110px;
+    border-radius: 0px 35px 35px 35px;
+    font-size: 18px;
+  }
+
+  #startInnerBorder {
+    height: 70px;
+    width: 80px;
+    top: 12px;
+    left: 12px;
+    border-radius: 0px 20px 20px 20px;
+  }
+
+  #buttonContent {
+    top: 29%;
+    left: 50%;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,50 @@
+#maneuverButtonPositionDiv {
+  position: absolute;
+  left: 52vw;
+}
+
+#maneuverButtonSpan {
+  font-family: Roboto;
+  color: white;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 1px;
+  padding-left: 1px;
+  font-size: 15px;
+}
+
+.maneuverButtonStyle {
+  position: absolute;
+  height: 90px;
+  width: 100px;
+  border: 0.1px solid #dbe7f0;
+  border-radius: 0px 30px 30px 30px;
+  background-color: #0f5e9e;
+  box-shadow: 14px 14px 25px rgba(0, 0, 0, 0.25);
+  outline: none;
+}
+
+.zIndex {
+  position: relative;
+  z-index: 10;
+}
+
+.floatingButton {
+  animation: float 20s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate;
+}
+
+@keyframes float {
+  0% {
+    transform: translateZ(20px);
+  }
+  100% {
+    transform: translateY(-21px) translateX(-13px) translateZ(30px);
+  }
+}
+
+@media only screen and (max-width: 1194px) and (orientation: landscape) {
+  #maneuverButtonPositionDiv {
+    top: -10vh;
+  }
+}

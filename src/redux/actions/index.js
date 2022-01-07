@@ -1,5 +1,5 @@
-//Dynamic Positioning
-// ==========================================================================
+// ================================Dynamic Positioning Start==========================================
+//MainButton
 export const home = () => {
   return {
     type: "HOME",
@@ -36,7 +36,7 @@ export const tempHomeToHome = () => {
   };
 };
 
-// Vehicle Button
+// SecondButton
 export const vehicleHome = () => {
   return {
     type: "VEHICLE-HOME",
@@ -67,7 +67,7 @@ export const vehicleFromMainButton = () => {
   };
 };
 
-// LaunchAim Button
+// FirstMenu
 export const launchAimHome = () => {
   return {
     type: "LAUNCH-AIM-HOME",
@@ -98,7 +98,7 @@ export const launchAimFromVehicle = () => {
   };
 };
 
-// Maneuver Button
+// SecondMenu
 export const maneuverHome = () => {
   return {
     type: "MANEUVER-HOME",

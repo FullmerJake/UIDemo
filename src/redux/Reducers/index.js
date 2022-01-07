@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import { INIT_STATE } from "../actions/ActionTypes";
+// import { INIT_STATE } from "../actions/ActionTypes";
 
 //Dynamic Positioning Redux
 import home from "./DynamicPositioningReducers/MainTrajButton/home";
@@ -51,7 +51,7 @@ const appReducer = combineReducers({
 
 const rootReducer = (state, action) => {
   // Clear all data in redux store to initial.
-  if (action.type === INIT_STATE) state = undefined;
+  // if (action.type === INIT_STATE) state = undefined;
 
   return appReducer(state, action);
 };
