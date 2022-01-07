@@ -1,192 +1,84 @@
-#maneuverModalPositionDiv {
-  top: 48%;
-  left: 53vw;
-  position: fixed;
+.nav,
+.menu {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.maneuverModalOptions {
-  border: 0px;
-  background: none;
-  box-shadow: none;
-  border-radius: 0px;
-  font-size: 18px;
-  font-family: Roboto;
+.nav {
+  position: absolute;
+  background-color: #fff;
+  padding: 20px;
+  transition: 0.5s;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  left: 40vw;
+  top: 50vh;
 }
 
-.manueverModalPosition {
-  width: 284px;
-  height: 152px;
-  position: absolute;
-}
-.manueverNameBox {
-  background-color: rgba(
-    62.00000010430813,
-    61.00000016391277,
-    64.00000378489494,
-    1
-  );
-  width: 284px;
-  height: 24px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  box-shadow: 5px 10px 8px #888888;
-}
-.manueverNamePosition {
-  color: rgba(137.00000703334808, 137.00000703334808, 139.0000069141388, 1);
-  width: 284px;
-  height: 24px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  font-family: Roboto;
-  text-align: center;
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: 26px;
-}
-.exitButton {
-  border-radius: 500px;
-  background-color: rgba(
-    106.00000128149986,
-    106.00000128149986,
-    106.00000128149986,
-    1
-  );
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  left: 9px;
-  top: 6px;
-}
-.miniButton {
-  border-radius: 500px;
-  background-color: rgba(
-    106.00000128149986,
-    106.00000128149986,
-    106.00000128149986,
-    1
-  );
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  left: 27px;
-  top: 6px;
-}
-.fullButton {
-  border-radius: 500px;
-  background-color: rgba(
-    106.00000128149986,
-    106.00000128149986,
-    106.00000128149986,
-    1
-  );
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  left: 45px;
-  top: 6px;
-}
-.manueverBoxBackground {
-  background-image: linear-gradient(
-    0deg,
-    rgba(120.00000044703484, 159.0000057220459, 192.00000375509262, 1) 0%,
-    rgba(81.00000277161598, 130.0000074505806, 171.00000500679016, 1) 100%
-  );
-  width: 284px;
-  height: 126px;
-  position: absolute;
-  top: 24px;
-  box-shadow: 5px 10px 8px #888888;
-}
-.manueverOptionSpacing {
-  width: 245px;
-  height: 96px;
-  position: absolute;
-  left: 18px;
-  top: 15px;
-}
-#maneuverModalOptionOne {
-  color: rgba(147.00000643730164, 181.0000044107437, 211.00000262260437, 1);
-  /* color: rgba(255, 255, 255, 1); */
-  width: 208px;
-  height: 32px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  font-family: Roboto;
-  text-align: left;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: px;
+.menu {
+  margin: 0;
+  padding: 0;
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
-#maneuverModalOptionOne:hover {
-  color: rgba(255, 255, 255, 1);
+.nav input:checked ~ .menu {
+  width: 450px;
 }
-#maneuverModalOptionTwo {
-  color: rgba(147.00000643730164, 181.0000044107437, 211.00000262260437, 1);
-  width: 135px;
-  height: 32px;
+
+.menu li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.menu li a:hover {
+  color: #161919;
+}
+
+.nav input {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.nav span {
   position: absolute;
-  left: 0px;
-  top: 32px;
-  font-family: Roboto;
-  text-align: left;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: px;
-}
-#maneuverModalOptionTwo:hover {
-  color: rgba(255, 255, 255, 1);
-}
-#maneuverModalOptionThree {
-  color: rgba(147.00000643730164, 181.0000044107437, 211.00000262260437, 1);
-  width: 245px;
-  height: 32px;
-  position: absolute;
-  left: 0px;
-  top: 64px;
-  font-family: Roboto;
-  text-align: left;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: px;
-}
-#maneuverModalOptionThree:hover {
-  color: rgba(255, 255, 255, 1);
+  left: 30px;
+  width: 30px;
+  height: 4px;
+  border-radius: 50px;
+  background-color: #666;
+  pointer-events: none;
+  transition: 0.5s;
 }
 
-/* ========================== */
-
-.floatingManModal {
-  animation: float 20s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate;
+.nav input:checked ~ span {
+  background-color: #f974a1;
 }
 
-@keyframes float {
-  0% {
-    transform: translateZ(20px);
-  }
-  100% {
-    transform: translateY(-21px) translateX(-13px) translateZ(30px);
-  }
+.nav span:nth-child(2) {
+  transform: translateY(-8px);
 }
 
-@media only screen and (max-width: 1194px) and (orientation: landscape) {
-  #maneuverModalPositionDiv {
-    top: 60vh;
-    left: 38vw;
-  }
-  #maneuverModalOptionOne {
-    font-size: 17px;
-  }
-  #maneuverModalOptionTwo {
-    font-size: 16px;
-  }
-  #maneuverModalOptionThree {
-    font-size: 17px;
-  }
+.nav input:checked ~ span:nth-child(2) {
+  transform: translateY(0) rotate(-45deg);
+}
+.nav span:nth-child(3) {
+  transform: translateY(8px);
+}
+
+.nav input:checked ~ span:nth-child(3) {
+  transform: translateY(0) rotate(45deg);
 }
