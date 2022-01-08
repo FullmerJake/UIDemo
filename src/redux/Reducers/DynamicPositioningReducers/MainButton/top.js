@@ -1,12 +1,12 @@
 import * as c from "../../../actions/ActionTypes";
 
-const maneuverHome = (state = false, action) => {
+const top = (state = false, action) => {
   switch (action.type) {
-    case c.MANEUVER_HOME:
+    case c.TOP:
       return !state;
     default:
       return state;
   }
 };
 
-export default maneuverHome;
+export default top;

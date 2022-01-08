@@ -1,12 +1,12 @@
 import * as c from "../../../actions/ActionTypes";
 
-const vehicleFromMainButton = (state = false, action) => {
+const rightFromTop = (state = false, action) => {
   switch (action.type) {
-    case c.VEHICLE_FROM_MAIN_BUTTON:
+    case c.RIGHT_FROM_TOP:
       return !state;
     default:
       return state;
   }
 };
 
-export default vehicleFromMainButton;
+export default rightFromTop;

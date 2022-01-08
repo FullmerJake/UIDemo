@@ -2,27 +2,23 @@ import { combineReducers } from "redux";
 // import { INIT_STATE } from "../actions/ActionTypes";
 
 //Dynamic Positioning Redux
-import home from "./DynamicPositioningReducers/MainTrajButton/home";
-import vehicleHome from "./DynamicPositioningReducers/VehicleButton/vehicleHome";
-import maneuverHome from "./DynamicPositioningReducers/ManeuverButton/maneuverHome";
-import launchAimHome from "./DynamicPositioningReducers/LaunchAimButton/launchAimHome";
-import bottom from "./DynamicPositioningReducers/MainTrajButton/bottom";
-import vehicleBottom from "./DynamicPositioningReducers/VehicleButton/vehicleBottom";
-import maneuverBottom from "./DynamicPositioningReducers/ManeuverButton/maneuverBottom";
-import launchAimBottom from "./DynamicPositioningReducers/LaunchAimButton/launchAimBottom";
-import mainMenuOnScreen from "./DynamicPositioningReducers/MainTrajButton/mainMenuOnScreen";
-import homeFromBottom from "./DynamicPositioningReducers/MainTrajButton/homeFromBottom";
-import maneuverHomeFromBottom from "./DynamicPositioningReducers/ManeuverButton/maneuverHomeFromBottom";
-import launchAimHomeFromBottom from "./DynamicPositioningReducers/LaunchAimButton/launchAimHomeFromBottom";
-import bottomFromHome from "./DynamicPositioningReducers/MainTrajButton/bottomFromHome";
-import vehicleBottomFromHome from "./DynamicPositioningReducers/VehicleButton/vehicleBottomFromHome";
-import maneuverBottomFromHome from "./DynamicPositioningReducers/ManeuverButton/maneuverBottomFromHome";
-import launchAimBottomFromHome from "./DynamicPositioningReducers/LaunchAimButton/launchAimBottomFromHome";
-import tempHomeToHome from "./DynamicPositioningReducers/MainTrajButton/tempHomeToHome";
-import vehicleHomeFromBottom from "./DynamicPositioningReducers/VehicleButton/vehicleHomeFromBottom";
-import launchAimFromVehicle from "./DynamicPositioningReducers/LaunchAimButton/launchAimFromVehicle";
-import maneuverFromVehicle from "./DynamicPositioningReducers/ManeuverButton/maneuverFromVehicle";
-import vehicleFromMainButton from "./DynamicPositioningReducers/VehicleButton/vehicleFromMainButton";
+import firstMenuHome from "./DynamicPositioningReducers/FirstMenu/firstMenuHome";
+import firstMenuLeft from "./DynamicPositioningReducers/FirstMenu/firstMenuLeft";
+import firstMenuLeftFromTop from "./DynamicPositioningReducers/FirstMenu/firstMenuLeftFromTop";
+import firstMenuTop from "./DynamicPositioningReducers/FirstMenu/firstMenuTop";
+import firstMenuTopFromHome from "./DynamicPositioningReducers/FirstMenu/firstMenuTopFromHome";
+import bottom from "./DynamicPositioningReducers/MainButton/bottom";
+import bottomFromRight from "./DynamicPositioningReducers/MainButton/bottomFromRight";
+import home from "./DynamicPositioningReducers/MainButton/home";
+import right from "./DynamicPositioningReducers/MainButton/right";
+import rightFromTop from "./DynamicPositioningReducers/MainButton/rightFromTop";
+import top from "./DynamicPositioningReducers/MainButton/top";
+import topFromHome from "./DynamicPositioningReducers/MainButton/topFromHome";
+import secondButtonHome from "./DynamicPositioningReducers/SecondButton/secondButtonHome";
+import secondButtonRight from "./DynamicPositioningReducers/SecondButton/secondButtonRight";
+import secondButtonRightFromHome from "./DynamicPositioningReducers/SecondButton/secondButtonRightFromHome";
+import secondMenuHome from "./DynamicPositioningReducers/SecondMenu/secondMenuHome";
+import homeFromBottom from "./DynamicPositioningReducers/MainButton/homeFromBottom";
 
 // Visibility Redux
 import mainButtonVis from "./VisibilityReducers/mainButtonVis";
@@ -30,33 +26,34 @@ import secondButtonVis from "./VisibilityReducers/secondButtonVis";
 import firstMenuVis from "./VisibilityReducers/firstMenuVis";
 import secondMenuVis from "./VisibilityReducers/secondMenuVis";
 
+import clickDontClick from "./clickDontClick";
+import buttonCount from "./buttonCount";
+
 const appReducer = combineReducers({
   // You can just have setVisibility by itself, this is simply changing the name.
-  home,
-  vehicleHome,
-  maneuverHome,
-  launchAimHome,
+  firstMenuHome,
+  firstMenuLeft,
+  firstMenuLeftFromTop,
+  firstMenuTop,
+  firstMenuTopFromHome,
   bottom,
-  vehicleBottom,
-  maneuverBottom,
-  launchAimBottom,
-  mainMenuOnScreen,
-  homeFromBottom,
-  maneuverHomeFromBottom,
-  launchAimHomeFromBottom,
-  bottomFromHome,
-  vehicleBottomFromHome,
-  maneuverBottomFromHome,
-  launchAimBottomFromHome,
-  tempHomeToHome,
-  vehicleHomeFromBottom,
-  launchAimFromVehicle,
-  maneuverFromVehicle,
-  vehicleFromMainButton,
+  bottomFromRight,
+  home,
+  right,
+  rightFromTop,
+  top,
+  topFromHome,
+  secondButtonHome,
+  secondButtonRight,
+  secondButtonRightFromHome,
+  secondMenuHome,
   mainButtonVis,
   secondButtonVis,
   firstMenuVis,
   secondMenuVis,
+  clickDontClick,
+  homeFromBottom,
+  buttonCount,
 });
 
 const rootReducer = (state, action) => {

@@ -13,8 +13,6 @@
   border-radius: 50px;
   overflow: hidden;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  left: 40vw;
-  top: 50vh;
 }
 
 .menu {
@@ -81,4 +79,50 @@
 
 .nav input:checked ~ span:nth-child(3) {
   transform: translateY(0) rotate(45deg);
+}
+
+.firstMenuHome {
+  position: absolute;
+  left: 45.5vw;
+  top: 40vh;
+}
+.firstMenuTop {
+  position: absolute;
+  left: 45.5vw;
+  top: 10vh;
+}
+.firstMenuLeft {
+  position: absolute;
+  left: 10vw;
+  top: 40vh;
+}
+
+.firstMenuTopFromHome {
+  animation: firstMenuFromHomeToTop 0.8s;
+  transition-timing-function: ease-out;
+}
+@keyframes firstMenuFromHomeToTop {
+  from {
+    left: 45.5vw;
+    top: 40vh;
+  }
+  to {
+    left: 45.5vw;
+    top: 10vh;
+  }
+}
+
+.firstMenuLeftFromTop {
+  animation: firstMenuFromTopToLeft 0.8s;
+  transition-timing-function: ease-out;
+}
+@keyframes firstMenuFromTopToLeft {
+  from {
+    left: 45.5vw;
+    top: 10vh;
+  }
+  to {
+    left: 10vw;
+    top: 40vh;
+  }
 }

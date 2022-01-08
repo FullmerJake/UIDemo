@@ -3,8 +3,6 @@
 .container {
   position: absolute;
   padding: 50px;
-  left: 50vw;
-  top: 30vh;
 }
 
 .card {
@@ -76,4 +74,10 @@ li:hover {
 .body li:hover > ul {
   display: block;
   cursor: pointer;
+}
+
+.secondMenuHome {
+  position: absolute;
+  left: 38vw;
+  top: 20vh;
 }

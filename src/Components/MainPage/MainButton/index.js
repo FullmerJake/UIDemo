@@ -6,49 +6,51 @@ import { Animated } from "react-animated-css";
 const MainButton = () => {
   const dispatch = useDispatch();
   //Dynamic Positioning
-  const home = useSelector((state) => state.home);
+  const home = useSelector((state) => !state.home);
+  const top = useSelector((state) => state.top);
+  const right = useSelector((state) => state.right);
   const bottom = useSelector((state) => state.bottom);
-  const mainMenuOnScreen = useSelector((state) => !state.mainMenuOnScreen);
+  const topFromHome = useSelector((state) => state.topFromHome);
+  const rightFromTop = useSelector((state) => state.rightFromTop);
+  const bottomFromRight = useSelector((state) => state.bottomFromRight);
   const homeFromBottom = useSelector((state) => state.homeFromBottom);
-  const bottomFromHome = useSelector((state) => state.bottomFromHome);
-  const tempHomeToHome = useSelector((state) => state.tempHomeToHome);
+
+  const clickDontClick = useSelector((state) => state.clickDontClick);
+  const buttonCount = useSelector((state) => state.buttonCount);
 
   const onClickAction = () => {
-    dispatch({
-      type: "FIRST-MENU-VIS",
-    });
+    dispatch({ type: "FIRST-MENU-VIS" });
+    //Off
+    dispatch({ type: "HOME" });
+
+    //On
+    dispatch({ type: "TOP" });
+    dispatch({ type: "TOP-FROM-HOME" });
+    dispatch({ type: "FIRST-MENU-HOME" });
   };
 
   return (
     <>
-      {/* {showTrajPage ? ( */}
-      <div className="zIndex">
-        <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
-          <div
-            className={`
+      <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
+        <div
+          className={`
                ${home ? "home" : ""}
+               ${top ? "top" : ""}
+               ${right ? "right" : ""}
                ${bottom ? "bottom" : ""}
-               ${mainMenuOnScreen ? "mainMenuOnScreen" : ""}
-               ${bottomFromHome ? "bottomFromHome" : ""}
+               ${topFromHome ? "topFromHome" : ""}
+               ${rightFromTop ? "rightFromTop" : ""}
+               ${bottomFromRight ? "bottomFromRight" : ""}
                ${homeFromBottom ? "homeFromBottom" : ""}
-               ${tempHomeToHome ? "tempHomeToHome" : ""}
             `}
-          >
-            <div>
-              <button
-                className="glow-on-hover"
-                style={{ position: "absolute", top: "40vh", left: "40vw" }}
-                onClick={onClickAction}
-              >
-                <p> Click Me </p>
-              </button>
-            </div>
+        >
+          <div>
+            <button className="glow-on-hover" onClick={onClickAction}>
+              <p> {clickDontClick ? "Don't Click Me!" : "Click Me!"} </p>
+            </button>
           </div>
-        </Animated>
-      </div>
-      {/* ) : (
-        ""
-      )}{" "} */}
+        </div>
+      </Animated>
     </>
   );
 };

@@ -1,12 +1,12 @@
 import * as c from "../../../actions/ActionTypes";
 
-const tempHomeToHome = (state = false, action) => {
+const secondButtonRight = (state = false, action) => {
   switch (action.type) {
-    case c.TEMP_HOME_TO_HOME:
+    case c.SECOND_BUTTON_RIGHT:
       return !state;
     default:
       return state;
   }
 };
 
-export default tempHomeToHome;
+export default secondButtonRight;

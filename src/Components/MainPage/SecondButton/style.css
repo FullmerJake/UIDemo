@@ -40,9 +40,6 @@ b span {
 #intro {
   width: 200px;
   margin: 100px auto 0;
-  position: absolute;
-  left: 40vw;
-  top: 10vh;
 }
 
 .button {
@@ -154,4 +151,29 @@ b span {
   bottom: -2px;
   width: 0;
   height: 2px;
+}
+
+.secondButtonHome {
+  position: absolute;
+  left: 43vw;
+  top: 25vh;
+}
+.secondButtonRight {
+  position: absolute;
+  left: 70vw;
+  top: 25vh;
+}
+.secondButtonRightFromHome {
+  animation: secondButtonFromHomeToRight 0.8s;
+  transition-timing-function: ease-out;
+}
+@keyframes secondButtonFromHomeToRight {
+  from {
+    left: 43vw;
+    top: 25vh;
+  }
+  to {
+    left: 70vw;
+    top: 25vh;
+  }
 }

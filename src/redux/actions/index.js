@@ -1,135 +1,64 @@
 // ================================Dynamic Positioning Start==========================================
-//MainButton
+// MainButton
 export const home = () => {
-  return {
-    type: "HOME",
-  };
+  return { type: "HOME" };
 };
-
+export const top = () => {
+  return { type: "TOP" };
+};
+export const right = () => {
+  return { type: "RIGHT" };
+};
 export const bottom = () => {
-  return {
-    type: "BOTTOM",
-  };
+  return { type: "BOTTOM" };
 };
-
-export const mainMenuOnScreen = () => {
-  return {
-    type: "MAINMENU-ON-SCREEN",
-  };
+export const topFromHome = () => {
+  return { type: "TOP-FROM-HOME" };
 };
-
+export const rightFromTop = () => {
+  return { type: "RIGHT-FROM-TOP" };
+};
+export const bottomFromRight = () => {
+  return { type: "BOTTOM-FROM-RIGHT" };
+};
 export const homeFromBottom = () => {
-  return {
-    type: "HOME-FROM-BOTTOM",
-  };
-};
-
-export const bottomFromHome = () => {
-  return {
-    type: "BOTTOM-FROM-HOME",
-  };
-};
-
-export const tempHomeToHome = () => {
-  return {
-    type: "TEMP-HOME-TO-HOME",
-  };
+  return { type: "HOME-FROM-BOTTOM" };
 };
 
 // SecondButton
-export const vehicleHome = () => {
-  return {
-    type: "VEHICLE-HOME",
-  };
+export const secondButtonHome = () => {
+  return { type: "SECOND-BUTTON-HOME" };
 };
-
-export const vehicleBottom = () => {
-  return {
-    type: "VEHICLE-BOTTOM",
-  };
+export const secondButtonRight = () => {
+  return { type: "SECOND-BUTTON-RIGHT" };
 };
-
-export const vehicleBottomFromHome = () => {
-  return {
-    type: "VEHICLE-BOTTOM-FROM-HOME",
-  };
-};
-
-export const vehicleHomeFromBottom = () => {
-  return {
-    type: "VEHICLE-HOME-FROM-BOTTOM",
-  };
-};
-
-export const vehicleFromMainButton = () => {
-  return {
-    type: "VEHICLE-FROM-MAIN-BUTTON",
-  };
+export const secondButtonRightFromHome = () => {
+  return { type: "SECOND-BUTTON-RIGHT-FROM-HOME" };
 };
 
 // FirstMenu
-export const launchAimHome = () => {
-  return {
-    type: "LAUNCH-AIM-HOME",
-  };
+export const firstMenuHome = () => {
+  return { type: "FIRST-MENU-HOME" };
 };
-
-export const launchAimBottom = () => {
-  return {
-    type: "LAUNCH-AIM-BOTTOM",
-  };
+export const firstMenuLeft = () => {
+  return { type: "FIRST-MENU-LEFT" };
 };
-
-export const launchAimHomeFromBottom = () => {
-  return {
-    type: "LAUNCH-AIM-HOME-FROM-BOTTOM",
-  };
+export const firstMenuTop = () => {
+  return { type: "FIRST-MENU-TOP" };
 };
-
-export const launchAimBottomFromHome = () => {
-  return {
-    type: "LAUNCH-AIM-BOTTOM-FROM-HOME",
-  };
+export const firstMenuTopFromHome = () => {
+  return { type: "FIRST-MENU-TOP-FROM-HOME" };
 };
-
-export const launchAimFromVehicle = () => {
-  return {
-    type: "LAUNCH-AIM-FROM-VEHICLE",
-  };
+export const firstMenuLeftFromTop = () => {
+  return { type: "FIRST-MENU-LEFT-FROM-TOP" };
 };
 
 // SecondMenu
-export const maneuverHome = () => {
-  return {
-    type: "MANEUVER-HOME",
-  };
+export const secondMenuHome = () => {
+  return { type: "SECOND_MENU_HOME" };
 };
 
-export const maneuverBottom = () => {
-  return {
-    type: "MANEUVER-BOTTOM",
-  };
-};
-
-export const maneuverHomeFromBottom = () => {
-  return {
-    type: "MANEUVER-HOME-FROM-BOTTOM",
-  };
-};
-
-export const maneuverBottomFromHome = () => {
-  return {
-    type: "MANEUVER-BOTTOM-FROM-HOME",
-  };
-};
-
-export const maneuverFromVehicle = () => {
-  return {
-    type: "MANEUVER-FROM-VEHICLE",
-  };
-};
-
-// ===============================================================================
+// ================================Dynamic Positioning End===============================================
 
 // ======================== Visibility Start ========================================
 
@@ -147,3 +76,11 @@ export const secondMenuVis = () => {
 };
 
 // ======================== Visibility End ==========================================
+
+export const clickDontClick = () => {
+  return { type: "CLICK-DONT-CLICK" };
+};
+
+export const buttonCount = () => {
+  return { type: "BUTTON-COUNT" };
+};

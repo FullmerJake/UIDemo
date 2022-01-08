@@ -1,12 +1,12 @@
 import * as c from "../../../actions/ActionTypes";
 
-const launchAimBottom = (state = false, action) => {
+const secondMenuHome = (state = false, action) => {
   switch (action.type) {
-    case c.LAUNCH_AIM_BOTTOM:
+    case c.SECOND_MENU_HOME:
       return !state;
     default:
       return state;
   }
 };
 
-export default launchAimBottom;
+export default secondMenuHome;

@@ -1,35 +1,28 @@
 // ======================== Dynamic Positioning Start =================================
 // MainButton
 export const HOME = "HOME";
+export const TOP = "TOP";
+export const RIGHT = "RIGHT";
 export const BOTTOM = "BOTTOM";
-export const MAINMENU_ON_SCREEN = "MAINMENU-ON-SCREEN";
+export const TOP_FROM_HOME = "TOP-FROM-HOME";
+export const RIGHT_FROM_TOP = "RIGHT-FROM-TOP";
+export const BOTTOM_FROM_RIGHT = "BOTTOM-FROM-RIGHT";
 export const HOME_FROM_BOTTOM = "HOME-FROM-BOTTOM";
-export const BOTTOM_FROM_HOME = "BOTTOM-FROM-HOME";
-export const TEMP_HOME_TO_HOME = "TEMP-HOME-TO-HOME";
 
 // SecondButton
-export const VEHICLE_HOME = "VEHICLE-HOME";
-export const VEHICLE_BOTTOM = "VEHICLE-BOTTOM";
-export const VEHICLE_BOTTOM_FROM_HOME = "VEHICLE-BOTTOM-FROM-HOME";
-export const VEHICLE_HOME_FROM_BOTTOM = "VEHICLE-HOME-FROM-BOTTOM";
-
-export const VEHICLE_FROM_MAIN_BUTTON = "VEHICLE-FROM-MAIN-BUTTON";
+export const SECOND_BUTTON_HOME = "SECOND-BUTTON-HOME";
+export const SECOND_BUTTON_RIGHT = "SECOND-BUTTON-RIGHT";
+export const SECOND_BUTTON_RIGHT_FROM_HOME = "SECOND-BUTTON-RIGHT-FROM-HOME";
 
 // FirstMenu
-export const LAUNCH_AIM_HOME = "LAUNCH-AIM-HOME";
-export const LAUNCH_AIM_BOTTOM = "LAUNCH-AIM-BOTTOM";
-export const LAUNCH_AIM_HOME_FROM_BOTTOM = "LAUNCH-AIM-HOME-FROM-BOTTOM";
-export const LAUNCH_AIM_BOTTOM_FROM_HOME = "LAUNCH-AIM-BOTTOM-FROM-HOME";
-
-export const LAUNCH_AIM_FROM_VEHICLE = "LAUNCH-AIM-FROM-VEHICLE";
+export const FIRST_MENU_HOME = "FIRST-MENU-HOME";
+export const FIRST_MENU_LEFT = "FIRST-MENU-LEFT";
+export const FIRST_MENU_TOP = "FIRST-MENU-TOP";
+export const FIRST_MENU_TOP_FROM_HOME = "FIRST-MENU-TOP-FROM-HOME";
+export const FIRST_MENU_LEFT_FROM_TOP = "FIRST-MENU-LEFT-FROM-TOP";
 
 // SecondMenu
-export const MANEUVER_HOME = "MANEUVER-HOME";
-export const MANEUVER_BOTTOM = "MANEUVER-BOTTOM";
-export const MANEUVER_HOME_FROM_BOTTOM = "MANEUVER-HOME-FROM-BOTTOM";
-export const MANEUVER_BOTTOM_FROM_HOME = "MANEUVER-BOTTOM-FROM-HOME";
-
-export const MANEUVER_FROM_VEHICLE = "MANEUVER-FROM-VEHICLE";
+export const SECOND_MENU_HOME = "SECOND_MENU_HOME";
 
 // ======================== Dynamic Positioning End =================================
 
@@ -41,3 +34,6 @@ export const MAIN_BUTTON_VIS = "MAIN-BUTTON-VIS";
 export const SECOND_BUTTON_VIS = "SECOND-BUTTON-VIS";
 
 // ======================== Visibility End ==========================================
+
+export const CLICK_DONT_CLICK = "CLICK-DONT-CLICK";
+export const BUTTON_COUNT = "BUTTON_COUNT";

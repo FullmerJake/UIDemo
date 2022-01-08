@@ -1,12 +1,12 @@
 import * as c from "../../../actions/ActionTypes";
 
-const bottomFromHome = (state = false, action) => {
+const right = (state = false, action) => {
   switch (action.type) {
-    case c.BOTTOM_FROM_HOME:
+    case c.RIGHT:
       return !state;
     default:
       return state;
   }
 };
 
-export default bottomFromHome;
+export default right;
